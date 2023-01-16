@@ -8,7 +8,6 @@ public class SplitNumbers {
         System.out.println("Total sum from " + number + " = " + sumDigits(number));
         number = 4;
         System.out.println("Total sum from " + number + " = " + sumDigits(number));
-
     }
 
     public static int sumDigits(int num) {
