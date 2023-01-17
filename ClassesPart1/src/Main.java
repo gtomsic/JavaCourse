@@ -20,18 +20,13 @@ public class Main {
 //        System.out.println("model = " + gabriel.getModel());
 //        gabriel.describeCar();
 
-        BankAccount gabrieltomsic = new BankAccount();
-        gabrieltomsic.setAccountNumber(10000);
-        gabrieltomsic.setAccountBalance(100);
-        gabrieltomsic.setAccountName("Gabriel Tomsic");
-        gabrieltomsic.setEmail("tomsicgabriel@gmail.com");
-        gabrieltomsic.setPhoneNumber("385-346-9909");
-        gabrieltomsic.accountDeposit(90);
-        gabrieltomsic.accountWithdrawal(50);
+        BankAccount gabrieltomsic = new BankAccount("AB29937", 1200, "Gabriel Tomsic", "tomsicgabriel@gmail.com", "384-346-9909");
+
         System.out.println("Account Number: " + gabrieltomsic.getAccountNumber() +
                 "\nAccount Name: " + gabrieltomsic.getAccountName() +
                 "\nAccount Balance: " + gabrieltomsic.getAccountBalance() +
                 "\nEmail: " + gabrieltomsic.getEmail() +
                 "\nPhone Number: " + gabrieltomsic.getPhoneNumber());
+        gabrieltomsic.accountWithdrawal(500);
     }
 }
