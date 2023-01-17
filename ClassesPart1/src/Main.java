@@ -27,6 +27,6 @@ public class Main {
                 "\nAccount Balance: " + gabrieltomsic.getAccountBalance() +
                 "\nEmail: " + gabrieltomsic.getEmail() +
                 "\nPhone Number: " + gabrieltomsic.getPhoneNumber());
-        gabrieltomsic.accountWithdrawal(500);
+        
     }
 }
