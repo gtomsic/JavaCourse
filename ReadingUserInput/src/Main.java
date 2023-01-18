@@ -2,17 +2,17 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-       int currentYear = 2022;
+        int currentYear = 2022;
 
-       try {
-           System.out.println(getInputFromConsole(currentYear));
-       } catch (NullPointerException e) {
-           System.out.println(getInputFromScanner(currentYear));
-       }
+        try {
+            System.out.println(getInputFromConsole(currentYear));
+        } catch (NullPointerException e) {
+            System.out.println(getInputFromScanner(currentYear));
+        }
 
     }
 
-    public static String getInputFromConsole(int currentYear){
+    public static String getInputFromConsole(int currentYear) {
         String name = System.console().readLine("Hi! What's your name?");
         System.out.println("Hi " + name + ", Thanks for taken the course!");
         String dateOfBirth = System.console().readLine("What year were you born?");
@@ -20,7 +20,7 @@ public class Main {
         return "So you are " + age + " years old.";
     }
 
-    public static String getInputFromScanner(int currentYear){
+    public static String getInputFromScanner(int currentYear) {
         Scanner scanner = new Scanner(System.in);
 
 //        String name = System.console().readLine("Hi! What's your name?");
@@ -31,7 +31,7 @@ public class Main {
 //        String dateOfBirth = System.console().readLine("What year were you born?");
         System.out.println("What year were you born?");
 
-        boolean validDOB   = false;
+        boolean validDOB = false;
         int age = 0;
         do {
             System.out.println("Enter a year of birth >= " +
@@ -47,7 +47,7 @@ public class Main {
         return "So you are " + age + " years old.";
     }
 
-    public static int checkData(int currentYear, String dateOfBirth){
+    public static int checkData(int currentYear, String dateOfBirth) {
         int dob = Integer.parseInt(dateOfBirth);
         int minYear = currentYear - 125;
 
