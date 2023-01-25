@@ -22,5 +22,5 @@ public class Main {
 	public static void modifyArrays(int[] array) {
 		array[1] = 33;
 	}
-
+	
 }
