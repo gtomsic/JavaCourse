@@ -5,7 +5,7 @@ public class Main {
 
 	public static void main(String[] args) {
 		// Sorted Array
-		int[] unsortedArray = getRandomArray(20);
+		int[] unsortedArray = getRandomArray(8);
 		
 		int[] sortedArray = sortArray(unsortedArray);
 		
@@ -37,6 +37,8 @@ public class Main {
 					tempVar = sortedArray[i];
 					sortedArray[i] = sortedArray[i + 1];
 					sortedArray[i + 1] = tempVar;
+					System.out.println("=".repeat(35));
+					System.out.println(Arrays.toString(sortedArray));
 					runLoop = true;
 				}
 			}
