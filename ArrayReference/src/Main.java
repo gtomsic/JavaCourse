@@ -11,11 +11,16 @@ public class Main {
 		System.out.println("anotherArray = " + Arrays.toString(anotherArray));
 		// IF YOU CHANGE ONE ARRAY 
 		// IT WILL AFFECT THE OTHER ARRAY
+		modifyArrays(myIntArray);
 		anotherArray[0] = 51;
 		// AFTER CHANGE ONE OF THE ARRAY
 
 		System.out.println("after changing myIntArray = " + Arrays.toString(myIntArray));
 		System.out.println("after changing anotherArray = " + Arrays.toString(anotherArray));
+	}
+	
+	public static void modifyArrays(int[] array) {
+		array[1] = 33;
 	}
 
 }
