@@ -12,5 +12,6 @@ public class Main {
 
         originalList.sort(Comparator.naturalOrder());
         System.out.println("array: " + Arrays.toString(originalArray));
+
     }
 }
